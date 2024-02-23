@@ -40,7 +40,7 @@ const Index = () => {
       <Box position="relative" textAlign="center" p={4}>
         {" "}
         {/* Added padding */}
-        <CircularProgress value={speed} size="200px" thickness="4px" color="green.400" isIndeterminate={isTesting}>
+        <CircularProgress value={speed} size="400px" thickness="4px" color="green.400" isIndeterminate={isTesting}>
           {" "}
           {/* Increased size */}
           <CircularProgressLabel style={{ transition: "all 0.5s ease-out" }}>{isTesting ? "Testing..." : `${speed.toFixed(2)} Mbps`}</CircularProgressLabel> {/* Added animation */}
