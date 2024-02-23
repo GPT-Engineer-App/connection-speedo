@@ -43,7 +43,7 @@ const Index = () => {
         <CircularProgress value={speed} size="400px" thickness="4px" color="green.400" isIndeterminate={isTesting}>
           {" "}
           {/* Increased size */}
-          <CircularProgressLabel style={{ fontSize: "0.5em" }}>{isTesting ? "Testing..." : `${speed.toFixed(2)} Mbps`}</CircularProgressLabel>
+          <CircularProgressLabel style={{ fontSize: "2em" }}>{isTesting ? "Testing..." : `${speed.toFixed(2)} Mbps`}</CircularProgressLabel>
         </CircularProgress>
         <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)">
           <FaTachometerAlt size="1.5em" />
