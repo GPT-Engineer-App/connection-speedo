@@ -37,9 +37,13 @@ const Index = () => {
       <Heading as="h1" size="2xl">
         Internet Speed Test
       </Heading>
-      <Box position="relative" textAlign="center">
-        <CircularProgress value={speed} size="150px" thickness="4px" color="green.400" isIndeterminate={isTesting}>
-          <CircularProgressLabel>{isTesting ? "Testing..." : `${speed.toFixed(2)} Mbps`}</CircularProgressLabel>
+      <Box position="relative" textAlign="center" p={4}>
+        {" "}
+        {/* Added padding */}
+        <CircularProgress value={speed} size="200px" thickness="4px" color="green.400" isIndeterminate={isTesting}>
+          {" "}
+          {/* Increased size */}
+          <CircularProgressLabel style={{ transition: "all 0.5s ease-out" }}>{isTesting ? "Testing..." : `${speed.toFixed(2)} Mbps`}</CircularProgressLabel> {/* Added animation */}
         </CircularProgress>
         <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)">
           <FaTachometerAlt size="3em" />
